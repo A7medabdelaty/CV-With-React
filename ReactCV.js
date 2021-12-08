@@ -1,10 +1,12 @@
 class App extends React.Component {
   render() {
     return (
-      <div class="main-container">
-        <Leftcolumn />
-        <Rightcolumn />
-        <div class="clear"></div>
+      <div>
+        <div class="main-container">
+          <Leftcolumn />
+          <Rightcolumn />
+          <div class="clear"></div>
+        </div>
         <Footer />
       </div>
     );
