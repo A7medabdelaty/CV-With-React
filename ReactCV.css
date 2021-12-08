@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --maincolor: #009688;
+  --shadow: 1px 1px 15px #b1b1b1, -1px -1px 15px #b1b1b1;
+}
+html {
+  background-color: #f1f1f1;
+}
+.main-container {
+  width: calc(100% - 120px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftcolumn {
+  width: calc(100% / 3);
+  height: fit-content;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #757575;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.leftcolumn .image {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.leftcolumn .image img {
+  width: 100%;
+}
+
+.leftcolumn .image::before {
+  content: "Ahmed Abdelaty";
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+  top: 85%;
+}
+
+.info,
+.skills,
+.lang {
+  padding: 15px;
+}
+
+.main-container i {
+  margin-right: 15px;
+  color: var(--maincolor);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+}
+
+.rightcolumn hr {
+  margin: 20px 0;
+}
+
+.main-container p {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.skills p,
+.lang p {
+  margin-bottom: 40px;
+}
+
+.skills p::before,
+.lang p::before {
+  content: "";
+  width: 100%;
+  top: 30px;
+  height: 15px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.skills p::after,
+.lang p::after {
+  content: "";
+  color: white;
+  text-align: center;
+  height: 17px;
+  top: 30px;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+  background-color: var(--maincolor);
+}
+
+.skills p.one::after {
+  content: "90%";
+  width: 90%;
+}
+
+.skills p.two::after {
+  content: "80%";
+  width: 80%;
+}
+
+.skills p.three::after {
+  content: "75%";
+  width: 75%;
+}
+
+.skills p.four::after {
+  content: "50%";
+  width: 50%;
+}
+
+.lang p.one::after {
+  width: 100%;
+}
+
+.lang p.two::after {
+  width: 50%;
+}
+
+.lang p.three::after {
+  width: 25%;
+}
+
+.rightcolumn {
+  width: calc((100% / 3 * 2) - 20px);
+  line-height: 1.8;
+  float: left;
+  height: fit-content;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: inherit;
+  color: #757575;
+}
+
+.rightcolumn .top,
+.rightcolumn .bottom {
+  background-color: white;
+  padding: 15px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+.textcont {
+  margin-left: 10px;
+}
+
+.textcont h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--maincolor);
+}
+
+.textcont p {
+  color: black;
+}
+
+.top h2,
+.bottom h2 {
+  margin-bottom: 20px;
+}
+
+.rightcolumn .top .textcont span {
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--maincolor);
+}
+
+.clear {
+  clear: both;
+}
+
+.footer {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  line-height: 1.9;
+  height: 120px;
+  background-color: var(--maincolor);
+}
+/* small */
+@media (max-width: 575.98px), (max-device-width: 575.98px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .rightcolumn,
+  .leftcolumn {
+    float: none;
+    margin: 20px auto;
+    width: calc(100% - 80px);
+    height: fit-content;
+  }
+
+  .leftcolumn h2 {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-device-width: 575.98px) {
+  .leftcolumn p::after,
+  .leftcolumn p::before {
+    top: 60px;
+  }
+
+  .main-container i {
+    margin-right: 20px;
+  }
+
+  .leftcolumn p,
+  .leftcolumn p {
+    margin: 60px 0;
+  }
+
+  .main-container h2,
+  .main-container h2 {
+    margin-top: 40px;
+  }
+
+  .leftcolumn,
+  .leftcolumn {
+    padding: 10px;
+  }
+
+  .main-container .leftcolumn .image::before {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 810px) {
+  .leftcolumn .image::before {
+    font-size: 18px;
+  }
+}
