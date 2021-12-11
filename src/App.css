@@ -143,8 +143,8 @@ hr {
   color: #757575;
 }
 
-.rightcolumn .top,
-.rightcolumn .bottom {
+.rightcolumn .workexp,
+.rightcolumn .education {
   background-color: white;
   padding: 15px;
   box-shadow: var(--shadow);
@@ -165,12 +165,12 @@ hr {
   color: black;
 }
 
-.top h2,
-.bottom h2 {
+.workexp h2,
+.education h2 {
   margin-bottom: 20px;
 }
 
-.rightcolumn .top .textcont span {
+.rightcolumn .workexp .textcont span {
   width: auto;
   padding: 5px;
   border-radius: 5px;

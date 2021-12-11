@@ -4,7 +4,7 @@ import MyApp from "./components/MainApp";
 function App() {
   return (
     <div>
-      <MyApp />{" "}
+      <MyApp />
     </div>
   );
 }

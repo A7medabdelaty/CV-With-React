@@ -3,11 +3,11 @@ import { Component } from "react";
 class Footer extends Component {
   render() {
     return (
-      <div class="footer">
+      <div className="footer">
         <p>Find me on social media.</p>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-twitter"></i>
         <p>Powered by Ahmed abdelaty</p>
       </div>
     );
